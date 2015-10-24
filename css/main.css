@@ -7,11 +7,12 @@ GENERAL
 }
 
 body {
-	background-color: #ffffff;
+	background-color: #efefef;
 	margin: 0;
 	padding: 0;
 	font-size: normal 1em/1.5;
 	font-family: 'Ruda', sans-serif;
+	text-align: center;
 
 
 }
@@ -19,6 +20,12 @@ body {
 h1 {
 	font-weight: 400;
 	letter-spacing: -.0625rem;
+	line-height: -1em;
+	color: #343434;
+}
+
+h2 {
+	letter-spacing: .175rem;
 	color: #343434;
 }
 
@@ -45,41 +52,153 @@ a {
 #container {
 	margin: 0 auto;
 	width: 80%;
-	background-color: #eee;
 }
 	#header {
 		text-align: center;
 		display: block;
-		background-color: #ddd;
 	}
 		#name {
-			display: inline-block;
-	    background-color: #ccc;
-	    margin-top: 2em;
-	    margin-bottom: 1em;
+	    margin-top: 2rem;
+	    margin-bottom: 1rem;
 		}
 			#name h1 {
-				font-size: 5em;
+				font-size: 5rem;
 				margin: 0;
 				padding: 0;
-				background-color: #bbb;
 			}
 			#name h3 {
-				font-size: 3em;
+				font-size: 2.5rem;
 				margin: 0;
 				padding: 0;
 				margin-top: 0;
-				background-color: #aaa;
 			}
 		#logo{
-			display: inline-block;
-			margin: 0 auto;
-			width: 6em;
-	    height: 6em;
-			position: relative;
-		
-		
-		}   
+			z-index: 0;
+			margin: 0 auto 1rem auto;
+			width: 6rem;
+	    height: 6rem;
+			position: relative;		
+		}  
+			#clouds {
+				position: relative;
+			}
+
+			#cloud1 {
+				z-index: 4;
+				width: 1.25rem; height: .375rem;
+				background: #fff;
+				
+				border-radius: 1.25rem;
+				-moz-border-radius: 1.25rem;
+				-webkit-border-radius: 1.25rem;
+				
+				position: absolute; 
+				top: 1.7rem;
+				left: 1rem;
+			}
+
+			#cloud1:before, #cloud1:after {
+				content: '';
+				position: absolute; 
+				background: #fff;
+
+				border-radius: .625rem;
+				-moz-border-radius: .625rem;
+				-webkit-border-radius: .625rem;
+			}
+
+			#cloud1:before {
+				width: .625rem; height: .5rem;
+				position: absolute; top: -.09375rem; left: .0625rem;
+				
+				-webkit-transform: rotate(30deg);
+				transform: rotate(30deg);
+				-moz-transform: rotate(30deg);
+			}
+
+			#cloud1:after {
+				width: .75rem; height: .75rem;
+				top: -.34375rem; left: auto; right: .09375rem;
+			}
+
+			#cloud2{
+				z-index: 2;
+				width: 2.5rem; height: .5625rem;
+				background: #fff;
+				
+				border-radius: 1.25rem;
+				-moz-border-radius: 1.25rem;
+				-webkit-border-radius: 1.25rem;
+				
+				position: absolute; 
+				top: 3rem; 
+				left: 2.7rem;
+			}
+
+			#cloud2:before, #cloud2:after {
+				content: '';
+				position: absolute; 
+				background: #fff;
+				width: 1.25rem; height: 1.25rem;
+				position: absolute; bottom: -.125rem; right: .185rem;
+				
+				border-radius: 100%;
+				-moz-border-radius: 100%;
+				-webkit-border-radius: 100%;
+			}
+
+			#cloud2:after {
+				width: 1.4rem; height: 1.4rem;
+				top: -.34375rem; left: auto; left: .19rem;
+			}
+
+			#cloud1 {
+				-webkit-animation: movecloudone 65s linear infinite;
+				-moz-animation: movecloudone 65s linear infinite;
+				-o-animation: movecloudone 65s linear infinite;
+			}
+
+			@-webkit-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+			@-moz-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+			@-o-keyframes movecloudone {
+				0% {margin-left: .5rem;}
+				50% {margin-left: 4rem;}
+				100% {margin-left: .5rem;}
+			}
+
+			#cloud2 {
+				-webkit-animation: movecloudtwo 75s linear infinite;
+				-moz-animation: movecloudtwo 75s linear infinite;
+				-o-animation: movecloudtwo 75s linear infinite;
+			}
+
+			@-webkit-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+			@-moz-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+			@-o-keyframes movecloudtwo {
+				0% {margin-left: .7rem;}
+				30% {margin-left: -3rem;}
+				75% {margin-left: 2rem;}
+				100% {margin-left: .7rem;}
+			}
+
 		  #peak1{
 		  	z-index: 1;
 			  display: inline-block;
@@ -131,7 +250,7 @@ a {
 			}
 				
 			#peak2{
-				z-index: 2;
+				z-index: 3;
 				display: inline-block;
 				position: absolute;
 				bottom: 0;
@@ -231,11 +350,26 @@ a {
 	li {
 	  display: inline-block;
 	  list-style: none;
+	  background-color: #888;
+	  margin: 0;
+	  padding: 0;
+	  vertical-align: top;
 	}
 
-	.social {
-	  width: 2rem;
-	  height: 2rem;
+	#navbar {
+		 background-color: #aaa;
+		 width: 100%;
+		 text-align: left;
+	}
+
+	#navbar img {
+	  width: 5rem;
+	  height: 5rem;
+	}
+
+	#navbar a {
+	  width: 5rem;
+	  height: 5rem;
 	}
 
 
