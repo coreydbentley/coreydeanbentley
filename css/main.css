@@ -1,0 +1,253 @@
+/*********************************************
+GENERAL
+**********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-size: normal 1em/1.5;
+	font-family: 'Ruda', sans-serif;
+
+
+}
+
+h1 {
+	font-weight: 400;
+	letter-spacing: -.0625rem;
+	color: #343434;
+}
+
+h3 {
+	font-family: 'Domine', serif;
+	letter-spacing: .175rem;
+	color: #343434;
+}
+
+a {
+	text-decoration: none;
+}
+
+#yellow {
+	color: #FFC107;
+}
+
+#top-bar {
+	width: 100%;
+	height: .825rem;
+	background-color: #FFC107;
+}
+
+#container {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #eee;
+}
+	#header {
+		text-align: center;
+		display: block;
+		background-color: #ddd;
+	}
+		#name {
+			display: inline-block;
+	    background-color: #ccc;
+	    margin-top: 2em;
+	    margin-bottom: 1em;
+		}
+			#name h1 {
+				font-size: 5em;
+				margin: 0;
+				padding: 0;
+				background-color: #bbb;
+			}
+			#name h3 {
+				font-size: 3em;
+				margin: 0;
+				padding: 0;
+				margin-top: 0;
+				background-color: #aaa;
+			}
+		#logo{
+			display: inline-block;
+			margin: 0 auto;
+			width: 6em;
+	    height: 6em;
+			position: relative;
+		
+		
+		}   
+		  #peak1{
+		  	z-index: 1;
+			  display: inline-block;
+				position: absolute;
+				bottom: 0;
+				left: -1em;
+	      width: 0;
+	      height: 0;
+	      border-left:   2rem solid transparent;
+	      border-right:  2rem solid transparent;
+	      border-bottom: 4rem solid #FFC107;
+			} 
+
+			#peak1 #captop {
+					position: absolute;
+				  top: 0;
+				  left: -.66666667rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   .66666667rem solid transparent;
+		      border-right:  .66666667rem solid transparent;
+		      border-bottom: 1.33333333rem solid #ccc;
+				}
+
+			#peak1 #cap1,
+			#peak1 #cap2,
+			#peak1 #cap3,
+			#peak1 #cap4 {
+				display: inline-block;
+				position: absolute;
+			  top: 1.32rem;
+	      width: 0;
+	      height: 0;
+	      border-left:   .16666667rem solid transparent;
+	      border-right:  .16666667rem solid transparent;
+	      border-top: .33333333rem solid #ccc;
+			}
+			#peak1 #cap1 {
+				left: 0;
+			}
+			#peak1 #cap2 {
+			  right: 0;
+			}
+			#peak1 #cap3 {
+			  right: .33333333rem;
+			}
+			#peak1 #cap4 {
+			  left: .33333333rem;
+			}
+				
+			#peak2{
+				z-index: 2;
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+	      width: 0;
+	      height: 0;
+	      border-left:   3rem solid transparent;
+	      border-right:  3rem solid transparent;
+	      border-bottom: 6rem solid #FFC107;
+			}
+			#peak2 #captop {
+					position: absolute;
+				  top: 0;
+				  left: -1rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   1rem solid transparent;
+		      border-right:  1rem solid transparent;
+		      border-bottom: 2rem solid #ccc;
+				}
+
+			#peak2 #cap1,
+			#peak2 #cap2,
+			#peak2 #cap3,
+			#peak2 #cap4 {
+				display: inline-block;
+				position: absolute;
+			  top: 2rem;
+	      width: 0;
+	      height: 0;
+	      border-left:   .25rem solid transparent;
+	      border-right:  .25rem solid transparent;
+	      border-top: .5rem solid #ccc;
+			}
+			#peak2 #cap1 {
+				left: 0;
+			}
+			#peak2 #cap2 {
+			  right: 0;
+			}
+			#peak2 #cap3 {
+			  right: .5rem;
+			}
+			#peak2 #cap4 {
+			  left: .5rem;
+			}
+
+			#peak3{
+				z-index: 1;
+				display: inline-block;
+				position: absolute;
+				bottom: 0;
+				right: -1em;
+	      width: 0;
+	      height: 0;
+	      border-left:   1.5rem solid transparent;
+	      border-right:  1.5rem solid transparent;
+	      border-bottom: 3rem solid #FFC107;
+			}   
+				#peak3 #captop {
+						position: absolute;
+					  top: 0;
+					  left: -.5rem;
+			      width: 0;
+			      height: 0;
+			      border-left:   .5rem solid transparent;
+			      border-right:  .5rem solid transparent;
+			      border-bottom: 1rem solid #ccc;
+					}
+
+				#peak3 #cap1,
+				#peak3 #cap2,
+				#peak3 #cap3,
+				#peak3 #cap4 {
+					display: inline-block;
+					position: absolute;
+				  top: 1rem;
+		      width: 0;
+		      height: 0;
+		      border-left:   .125rem solid transparent;
+		      border-right:  .125rem solid transparent;
+		      border-top: .25rem solid #ccc;
+				}
+				#peak3 #cap1 {
+					left: 0;
+				}
+				#peak3 #cap2 {
+				  right: 0;
+				}
+				#peak3 #cap3 {
+				  right: .25rem;
+				}
+				#peak3 #cap4 {
+				  left: .25rem;
+				}
+   
+	li {
+	  display: inline-block;
+	  list-style: none;
+	}
+
+	.social {
+	  width: 2rem;
+	  height: 2rem;
+	}
+
+
+	@media screen and (min-width: 320px){
+		/*********************************************
+		GENERAL
+		**********************************************/
+		#logocontainter{
+			display: inline-block;
+			text-align: right;
+			width: 20%;
+      background-color: 999;
+		}
+
+	}
